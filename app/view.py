@@ -21,7 +21,7 @@ def Main():
     return render_template('frontpg.html',
                             title='main',
                             form=form)
-#use decorator to link the function to the url
+#use decorator to link the function to the url.
 @app.route('/')
 @login_required
 def home():
