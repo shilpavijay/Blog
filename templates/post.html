@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+    $("#submit").trigger("reset");
+  });
+});
+</script>
+<body>
+     <div class="container">
+          <form action="post" method="post">
+              <fieldset class="form-group">
+              <br>
+              <input type="text" class="form-control" name="title" placeholder=" Enter title of the post " cols = "100"><br><br> 
+
+              <textarea placeholder=" Body of the post goes here" class="form-control" name="body" rows="20" cols="100"></textarea><br>
+              <input type = "submit" value ="Submit" id="submit">
+              </fieldset>
+
+         </form>
+</body>
+</html>
